@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>My Expense Tracker</title>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <div class="input-selection">
+        <label for="category-select">category</label>
+        <select id="category-select">
+            <option value="water">water</option>
+            <option value="Tables">Tables</option>
+            <option value="Laptops">Laptops</option>
+            <option value="Furiture">Furniture</option>
+            <option value="Books">Books</option>
+        </select>
+
+        <label for="amount input">Amount</label>
+        <input type="number" id="amount-input">
+
+
+    </div>
+   <div id="expense-list">
+    <h2>Expenses List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th> <br>
+                <th>Amount</th>
+            </tr>
+        </thead>
+       <tbody id="expense table body"></tbody>
+       <tfoot>
+        <tr>
+            <td>Total</td>
+            <td id="totalamount"></td>
+            <td></td>
+        </tr>
+       </tfoot>
+    </table>
+   </div>
+
+   <div class="">
+    <h1>Currency Converter</h1>
+    <p>select the currency and enter amount to convert.</p>
+    <form>
+        <label>From:</label>
+    <select id="from">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="CAD">CAD</option>
+    </select>
+    <label>To:</label>
+    <select id="to">
+        <option value="USD">KES</option>
+        <option value="EUR">USD</option>
+        <option value="CAD">EUR</option>
+    </select>
+    <label for="Amount:"></label>
+    <input type="text"  id="amount" />
+    <button type="button" id="convert">convert</button>
+    </form>
+    
+   </div>
+
+   <script src="script.js"></script>
+
+    
+</body>
+</html> 
